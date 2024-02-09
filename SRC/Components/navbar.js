@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import ChatScreen from '../Screens/ChatScreen'
 import { AntDesign } from '@expo/vector-icons';
 import MedicationScreen from '../Screens/MedicationScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
@@ -35,18 +36,12 @@ const Navbar = () => {
 
        <Tab.Screen
           name="Chat"
-          component={MemoryJournalScreen} // Corrected component name
+          component={ChatScreen} // Corrected component name
           options={{
             tabBarIcon: ({ color, size }) => (
             <AntDesign name="wechat" size={size} color={color} />            ),
           }}
         />
-
-
-
-
-
-
 
         <Tab.Screen
           name="Profile"
