@@ -5,6 +5,7 @@ import { AntDesign } from '@expo/vector-icons';
 import MedicationScreen from '../Screens/MedicationScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
 import MemoryJournalScreen from '../Screens/MemoryJournalScreen'; // Corrected import name
+import { Entypo } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,6 +31,23 @@ const Navbar = () => {
             ),
           }}
         />
+
+
+       <Tab.Screen
+          name="Chat"
+          component={MemoryJournalScreen} // Corrected component name
+          options={{
+            tabBarIcon: ({ color, size }) => (
+            <AntDesign name="wechat" size={size} color={color} />            ),
+          }}
+        />
+
+
+
+
+
+
+
         <Tab.Screen
           name="Profile"
           component={ProfileScreen}
