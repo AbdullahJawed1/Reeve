@@ -82,14 +82,14 @@ const MemoryJournalScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#F0F8FF',
     padding: 20,
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#333333',
+    color: '#4682B4',
     textAlign: 'center',
   },
   plusButton: {

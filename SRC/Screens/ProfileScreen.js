@@ -70,7 +70,7 @@ const ProfileScreen = () => {
         value={phone}
         onChangeText={setPhone}
       />
-      <Button title="Update Profile" onPress={updateProfile} />
+      <Button title="Update Profile" onPress={updateProfile} color="#4CAF50" />
     </View>
   );
 };
@@ -78,7 +78,7 @@ const ProfileScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#F0F8FF',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
@@ -87,6 +87,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    color: '#4682B4',
   },
   input: {
     width: '100%',
@@ -96,6 +97,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
     paddingHorizontal: 10,
+    backgroundColor: '#FFFFFF',
   },
   profileImage: {
     width: 120,

@@ -47,11 +47,14 @@ const MedicationScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Add reminders</Text>
+        <Text style={styles.title}>Add Reminders</Text>
         <TouchableOpacity onPress={() => setModalVisible(true)} style={styles.addButton}>
           <Text style={styles.addButtonText}>+</Text>
         </TouchableOpacity>
       </View>
+
+      <View style={styles.partition}></View>
+
       <Modal
         animationType="slide"
         transparent={true}
@@ -85,6 +88,9 @@ const MedicationScreen = () => {
           </TouchableOpacity>
         </View>
       </Modal>
+
+      <View style={styles.partition}></View>
+
       <Text style={styles.subtitle}>Active Reminders</Text>
       <FlatList
         data={reminders}
@@ -98,7 +104,7 @@ const MedicationScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#F0F8FF',
     paddingVertical: 20,
     paddingHorizontal: 10,
   },
@@ -111,10 +117,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#4682B4',
   },
   addButton: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#20B2AA',
     padding: 15,
     borderRadius: 50,
   },
@@ -140,7 +146,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   button: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#20B2AA',
     padding: 10,
     borderRadius: 5,
     marginTop: 10,
@@ -155,7 +161,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: '#333',
+    color: '#4682B4',
   },
   reminderItem: {
     marginBottom: 20,
@@ -163,7 +169,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#F0FFFF',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -177,7 +183,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   deleteButton: {
-    backgroundColor: '#ff0000',
+    backgroundColor: '#FF4500',
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderRadius: 5,
@@ -185,6 +191,11 @@ const styles = StyleSheet.create({
   deleteButtonText: {
     color: '#fff',
     fontWeight: 'bold',
+  },
+  partition: {
+    borderBottomWidth: 2,
+    borderBottomColor: '#4682B4',
+    marginBottom: 20,
   },
 });
 
